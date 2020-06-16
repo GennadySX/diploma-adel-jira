@@ -6,9 +6,9 @@ import { Header, BoardName } from './Styles';
 
 const ProjectBoardHeader = () => (
   <Header>
-    <BoardName>Kanban board</BoardName>
+    <BoardName>Доска</BoardName>
     <a href="https://github.com/oldboyxx/jira_clone" target="_blank" rel="noreferrer noopener">
-      <Button icon="github">Github Repo</Button>
+      <Button icon="github">Исходники проекта</Button>
     </a>
   </Header>
 );

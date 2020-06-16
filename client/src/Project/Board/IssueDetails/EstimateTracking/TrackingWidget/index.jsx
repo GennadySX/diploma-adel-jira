@@ -16,7 +16,7 @@ const ProjectBoardIssueDetailsTrackingWidget = ({ issue }) => (
         <Bar width={calculateTrackingBarWidth(issue)} />
       </BarCont>
       <Values>
-        <div>{issue.timeSpent ? `${issue.timeSpent}h logged` : 'No time logged'}</div>
+        <div>{issue.timeSpent ? `${issue.timeSpent}ч затрачено` : 'Нет затраченого времени'}</div>
         {renderRemainingOrEstimate(issue)}
       </Values>
     </Right>
@@ -43,10 +43,10 @@ const renderRemainingOrEstimate = ({ timeRemaining, estimate }) => {
     return null;
   }
   if (!isNil(timeRemaining)) {
-    return <div>{`${timeRemaining}h remaining`}</div>;
+    return <div>{`${timeRemaining}ч осталось`}</div>;
   }
   if (!isNil(estimate)) {
-    return <div>{`${estimate}h estimated`}</div>;
+    return <div>{`${estimate}ч всего`}</div>;
   }
 };
 

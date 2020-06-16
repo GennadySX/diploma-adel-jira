@@ -16,7 +16,7 @@ const fontIconCodes = {
   [`chevron-right`]: '\\e902',
   [`chevron-up`]: '\\e903',
   [`board`]: '\\e904',
-  [`help`]: '\\e905',
+  [`help`]: '\\2689',
   [`link`]: '\\e90c',
   [`menu`]: '\\e916',
   [`more`]: '\\e90e',

@@ -30,18 +30,23 @@ const ProjectSidebar = ({ project }) => {
         <ProjectAvatar />
         <ProjectTexts>
           <ProjectName>{project.name}</ProjectName>
-          <ProjectCategory>{ProjectCategoryCopy[project.category]} project</ProjectCategory>
+          <ProjectCategory>
+              ПО WorkBase
+            {
+             // ProjectCategoryCopy[project.category]
+            }
+
+          </ProjectCategory>
         </ProjectTexts>
       </ProjectInfo>
 
-      {renderLinkItem(match, 'Kanban Board', 'board', '/board')}
-      {renderLinkItem(match, 'Project settings', 'settings', '/settings')}
+      {renderLinkItem(match, 'Доска', 'board', '/board')}
+      {renderLinkItem(match, 'Настройка проекта', 'settings', '/settings')}
       <Divider />
-      {renderLinkItem(match, 'Releases', 'shipping')}
-      {renderLinkItem(match, 'Issues and filters', 'issues')}
-      {renderLinkItem(match, 'Pages', 'page')}
-      {renderLinkItem(match, 'Reports', 'reports')}
-      {renderLinkItem(match, 'Components', 'component')}
+      {renderLinkItem(match, 'Готовы', 'issues')}
+      {renderLinkItem(match, 'Страницы', 'page')}
+      {renderLinkItem(match, 'Отчеты', 'reports')}
+      {renderLinkItem(match, 'Компоненты', 'component')}
     </Sidebar>
   );
 };

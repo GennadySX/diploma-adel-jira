@@ -69,7 +69,7 @@ const ProjectIssueCreate = ({ project, fetchProject, onCreate, modalClose }) => 
       }}
     >
       <FormElement>
-        <FormHeading>Create issue</FormHeading>
+        <FormHeading>Создать задачу</FormHeading>
         <Form.Field.Select
           name="type"
           label="Issue Type"
@@ -115,10 +115,10 @@ const ProjectIssueCreate = ({ project, fetchProject, onCreate, modalClose }) => 
         />
         <Actions>
           <ActionButton type="submit" variant="primary" isWorking={isCreating}>
-            Create Issue
+            Создать задачу
           </ActionButton>
           <ActionButton type="button" variant="empty" onClick={modalClose}>
-            Cancel
+            Отменить
           </ActionButton>
         </Actions>
       </FormElement>

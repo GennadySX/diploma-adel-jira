@@ -17,10 +17,10 @@ const propTypes = {
 const defaultProps = {
   className: undefined,
   variant: 'primary',
-  title: 'Warning',
-  message: 'Are you sure you want to continue with this action?',
-  confirmText: 'Confirm',
-  cancelText: 'Cancel',
+  title: 'Внимение',
+  message: 'Вы уверены, что хотите продолжить это действие?',
+  confirmText: 'Подтвердить',
+  cancelText: 'Отменить',
 };
 
 const ConfirmModal = ({

@@ -18,12 +18,12 @@ const ProjectNavbarLeft = ({ issueSearchModalOpen, issueCreateModalOpen }) => (
 
     <Item onClick={issueSearchModalOpen}>
       <Icon type="search" size={22} top={1} left={3} />
-      <ItemText>Search issues</ItemText>
+      <ItemText>Поиск задачи</ItemText>
     </Item>
 
     <Item onClick={issueCreateModalOpen}>
       <Icon type="plus" size={27} />
-      <ItemText>Create Issue</ItemText>
+      <ItemText>Создать задачу</ItemText>
     </Item>
 
     <Bottom>
@@ -33,7 +33,7 @@ const ProjectNavbarLeft = ({ issueSearchModalOpen, issueCreateModalOpen }) => (
         renderLink={linkProps => (
           <Item {...linkProps}>
             <Icon type="help" size={25} />
-            <ItemText>About</ItemText>
+            <ItemText>Профиль</ItemText>
           </Item>
         )}
       />

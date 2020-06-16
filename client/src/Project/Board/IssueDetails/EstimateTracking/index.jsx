@@ -23,10 +23,10 @@ const propTypes = {
 
 const ProjectBoardIssueDetailsEstimateTracking = ({ issue, updateIssue }) => (
   <Fragment>
-    <SectionTitle>Original Estimate (hours)</SectionTitle>
+    <SectionTitle>Органичение времени (часов)</SectionTitle>
     {renderHourInput('estimate', issue, updateIssue)}
 
-    <SectionTitle>Time Tracking</SectionTitle>
+    <SectionTitle>Затраченое время</SectionTitle>
     <Modal
       testid="modal:tracking"
       width={400}
@@ -37,21 +37,21 @@ const ProjectBoardIssueDetailsEstimateTracking = ({ issue, updateIssue }) => (
       )}
       renderContent={modal => (
         <ModalContents>
-          <ModalTitle>Time tracking</ModalTitle>
+          <ModalTitle>Затраченое время</ModalTitle>
           <TrackingWidget issue={issue} />
           <Inputs>
             <InputCont>
-              <InputLabel>Time spent (hours)</InputLabel>
+              <InputLabel>Затраченое время (часов)</InputLabel>
               {renderHourInput('timeSpent', issue, updateIssue)}
             </InputCont>
             <InputCont>
-              <InputLabel>Time remaining (hours)</InputLabel>
+              <InputLabel>Времени осталось (часов)</InputLabel>
               {renderHourInput('timeRemaining', issue, updateIssue)}
             </InputCont>
           </Inputs>
           <Actions>
             <Button variant="primary" onClick={modal.close}>
-              Done
+              Заверешить
             </Button>
           </Actions>
         </ModalContents>
@@ -62,7 +62,7 @@ const ProjectBoardIssueDetailsEstimateTracking = ({ issue, updateIssue }) => (
 
 const renderHourInput = (fieldName, issue, updateIssue) => (
   <InputDebounced
-    placeholder="Number"
+    placeholder="Введите число"
     filter={/^\d{0,6}$/}
     value={isNil(issue[fieldName]) ? '' : issue[fieldName]}
     onChange={stringValue => {

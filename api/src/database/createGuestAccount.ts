@@ -15,10 +15,18 @@ const seedUsers = (): Promise<User[]> => {
       name: 'Baby Yoda',
       avatarUrl: 'https://i.ibb.co/6n0hLML/baby-yoda.jpg',
     }),
+
     createEntity(User, {
       email: 'gaben@jira.guest',
       name: 'Lord Gaben',
       avatarUrl: 'https://i.ibb.co/6RJ5hq6/gaben.jpg',
+    }),
+
+
+    createEntity(User, {
+      email: 'adel@jira.guest',
+      name: 'Adel Gilmutdinov',
+      avatarUrl: 'https://i.ibb.co/FBbmLjF/fe5f91d40cd7.jpg',
     }),
   ];
   return Promise.all(users);

@@ -62,7 +62,7 @@ const ProjectBoardIssueDetails = ({
           <AboutTooltip
             renderLink={linkProps => (
               <Button icon="feedback" variant="empty" {...linkProps}>
-                Give feedback
+                Оставить отзыв
               </Button>
             )}
           />

@@ -26,16 +26,16 @@ export const IssueTypeCopy = {
 };
 
 export const IssueStatusCopy = {
-  [IssueStatus.BACKLOG]: 'Backlog',
-  [IssueStatus.SELECTED]: 'Selected for development',
-  [IssueStatus.INPROGRESS]: 'In progress',
-  [IssueStatus.DONE]: 'Done',
+  [IssueStatus.BACKLOG]: 'Задачи',
+  [IssueStatus.SELECTED]: 'Особые задачи',
+  [IssueStatus.INPROGRESS]: 'В ходе выполнения',
+  [IssueStatus.DONE]: 'Выполнено',
 };
 
 export const IssuePriorityCopy = {
-  [IssuePriority.HIGHEST]: 'Highest',
-  [IssuePriority.HIGH]: 'High',
-  [IssuePriority.MEDIUM]: 'Medium',
-  [IssuePriority.LOW]: 'Low',
-  [IssuePriority.LOWEST]: 'Lowest',
+  [IssuePriority.HIGHEST]: 'Очень срочно',
+  [IssuePriority.HIGH]: 'Срочно',
+  [IssuePriority.MEDIUM]: 'Средний',
+  [IssuePriority.LOW]: 'Не срочно',
+  [IssuePriority.LOWEST]: 'Отложено',
 };

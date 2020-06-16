@@ -47,17 +47,17 @@ const ProjectBoardFilters = ({ projectUsers, defaultFilters, filters, mergeFilte
         isActive={myOnly}
         onClick={() => mergeFilters({ myOnly: !myOnly })}
       >
-        Only My Issues
+        Только мои задачи
       </StyledButton>
       <StyledButton
         variant="empty"
         isActive={recent}
         onClick={() => mergeFilters({ recent: !recent })}
       >
-        Recently Updated
+        Недавние изменения
       </StyledButton>
       {!areFiltersCleared && (
-        <ClearAll onClick={() => mergeFilters(defaultFilters)}>Clear all</ClearAll>
+        <ClearAll onClick={() => mergeFilters(defaultFilters)}>Очистить все</ClearAll>
       )}
     </Filters>
   );

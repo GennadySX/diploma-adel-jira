@@ -41,6 +41,8 @@ class Project extends BaseEntity {
   @UpdateDateColumn({ type: 'timestamp' })
   updatedAt: Date;
 
+
+
   @OneToMany(
     () => Issue,
     issue => issue.project,

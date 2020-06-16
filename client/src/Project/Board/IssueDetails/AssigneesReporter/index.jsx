@@ -19,7 +19,7 @@ const ProjectBoardIssueDetailsAssigneesReporter = ({ issue, updateIssue, project
 
   return (
     <Fragment>
-      <SectionTitle>Assignees</SectionTitle>
+      <SectionTitle>Испольнители</SectionTitle>
       <Select
         isMulti
         variant="empty"
@@ -37,7 +37,7 @@ const ProjectBoardIssueDetailsAssigneesReporter = ({ issue, updateIssue, project
         renderOption={({ value: userId }) => renderUser(getUserById(userId), false)}
       />
 
-      <SectionTitle>Reporter</SectionTitle>
+      <SectionTitle>Создатель</SectionTitle>
       <Select
         variant="empty"
         dropdownWidth={343}

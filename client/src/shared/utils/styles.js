@@ -30,7 +30,7 @@ export const color = {
 
 export const issueTypeColors = {
   [IssueType.TASK]: '#4FADE6', // blue
-  [IssueType.BUG]: '#E44D42', // red
+  [IssueType.BUG]: '#E44D4n2', // red
   [IssueType.STORY]: '#65BA43', // green
 };
 

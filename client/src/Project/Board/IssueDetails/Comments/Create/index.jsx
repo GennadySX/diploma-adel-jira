@@ -48,7 +48,7 @@ const ProjectBoardIssueDetailsCommentsCreate = ({ issueId, fetchIssue }) => {
           />
         ) : (
           <Fragment>
-            <FakeTextarea onClick={() => setFormOpen(true)}>Add a comment...</FakeTextarea>
+            <FakeTextarea onClick={() => setFormOpen(true)}>Добавить коммент...</FakeTextarea>
             <ProTip setFormOpen={setFormOpen} />
           </Fragment>
         )}

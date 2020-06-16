@@ -30,7 +30,7 @@ class User extends BaseEntity {
   @Column('varchar')
   email: string;
 
-  @Column('varchar', { length: 2000 })
+  @Column('varchar', { length: 2000, nullable: true })
   avatarUrl: string;
 
   @CreateDateColumn({ type: 'timestamp' })

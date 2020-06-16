@@ -11,8 +11,8 @@ const propTypes = {
 
 const ProjectBoardIssueDetailsDates = ({ issue }) => (
   <Dates>
-    <div>Created at {formatDateTimeConversational(issue.createdAt)}</div>
-    <div>Updated at {formatDateTimeConversational(issue.updatedAt)}</div>
+    <div>Создан  {formatDateTimeConversational(issue.createdAt)}</div>
+    <div>Обновлен  {formatDateTimeConversational(issue.updatedAt)}</div>
   </Dates>
 );
 

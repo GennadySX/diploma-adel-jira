@@ -42,7 +42,7 @@ const ProjectSettings = ({ project, fetchProject }) => {
       <FormCont>
         <FormElement>
           <Breadcrumbs items={['Projects', project.name, 'Project Details']} />
-          <FormHeading>Project Details</FormHeading>
+          <FormHeading>Детали проекта</FormHeading>
 
           <Form.Field.Input name="name" label="Name" />
           <Form.Field.Input name="url" label="URL" />
@@ -54,7 +54,7 @@ const ProjectSettings = ({ project, fetchProject }) => {
           <Form.Field.Select name="category" label="Project Category" options={categoryOptions} />
 
           <ActionButton type="submit" variant="primary" isWorking={isUpdating}>
-            Save changes
+            Сохранить изменение
           </ActionButton>
         </FormElement>
       </FormCont>
